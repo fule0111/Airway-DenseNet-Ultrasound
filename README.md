@@ -49,7 +49,6 @@ Performs model ensemble across different ultrasound plane models.
 python ensemble.py ./models/  # 直接运行即可
 ```
 ---
----
 
 ### 4.3 train.csv / test.csv
 These two files are the core log files of the project (consistent with the 5-fold cross validation in the paper):
