@@ -57,7 +57,27 @@ These two files are the core log files of the project (consistent with the 5-fol
 - `test.csv`: Records the final testing results of the four sub-models and the weighted fusion model, which can be used to verify the experimental data in the paper.
 - Format explanation: Both files are in CSV format, which can be directly opened and viewed with Excel, WPS or Notepad (no additional software required).
 ---
-## 5. Model Concept
+
+## 5. Pre-trained Model Weights Availability
+### 5.1 Why This Part Is Important
+The pre-trained weights of the four sub-models (MPM/TPH/TPT/PSPL) are necessary to run the `ensemble.py` script (without these files, the fusion function cannot be executed normally).
+
+### 5.2 Access Method
+Due to the protection of research results and file size limitations, the pre-trained weights are not stored in this GitHub repository. 
+**Researchers who need the weights for academic research can apply by contacting the corresponding author:**
+- E-mail: [Fuchunmeng918@163.com]
+- Application Note: Please specify the research purpose and institution in the email subject.
+
+### 5.3 Usage Note After Obtaining Weights
+1. Create a folder named `models` in the project root directory (same folder as `README.md` and `ensemble.py`);
+2. Place the obtained weight files into `./models/`, and ensure the file names are consistent with the following format:
+   - MPM model: `MPM_pretrained.pth`
+   - TPH model: `TPH_pretrained.pth`
+   - TPT model: `TPT_pretrained.pth`
+   - PSPL model: `PSPL_pretrained.pth`
+
+---
+## 6. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
 - **MPM:** Mid-Plane of the Mandible (sagittal)  
 - **TPH:** Transverse Plane at the Hyoid Bone  
@@ -66,6 +86,6 @@ The project adopts a **multi-plane fusion strategy**, including the following fo
 The `ensemble.py` script merges predictions from these models into a unified model to enhance classification and airway visualization performance.
 
 ---
-## 6. Citation
+## 7. Citation
 If you use this project in your research, please cite:  
 **"A New Deep Learning-Driven Strategy for Airway Management: The 'Two-Models-Three-Steps' Decision Framework."**
