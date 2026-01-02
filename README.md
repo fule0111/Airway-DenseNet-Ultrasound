@@ -49,6 +49,13 @@ Performs model ensemble across different ultrasound plane models.
 python ensemble.py ./models/  # 直接运行即可
 ```
 ---
+---
+
+### 4.3 train.csv / test.csv
+These two files are the core log files of the project (consistent with the 5-fold cross validation in the paper):
+- `train.csv`: Records the training process details and validation results of the four sub-models (MPM/TPH/TPT/PSPL), including key indicators such as epoch, loss and accuracy.
+- `test.csv`: Records the final testing results of the four sub-models and the weighted fusion model, which can be used to verify the experimental data in the paper.
+- Format explanation: Both files are in CSV format, which can be directly opened and viewed with Excel, WPS or Notepad (no additional software required).
 
 ## 5. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
