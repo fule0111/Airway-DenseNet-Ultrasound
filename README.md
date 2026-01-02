@@ -89,3 +89,13 @@ The `ensemble.py` script merges predictions from these models into a unified mod
 ## 7. Citation
 If you use this project in your research, please cite:  
 **"A New Deep Learning-Driven Strategy for Airway Management: The 'Two-Models-Three-Steps' Decision Framework."**
+
+---
+## 8. License & Permanent Access
+### 8.1 Open Source License
+This project is licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file in the project root directory for details. This license allows free use, modification and distribution for academic research purposes.
+
+### 8.2 Permanent Project Access
+To ensure the long-term preservation and accessible of the project (in line with journal requirements), this project will be archived on Zenodo to obtain a persistent Digital Object Identifier (DOI):
+- Persistent DOI (to be filled after archiving): [Please fill in your Zenodo DOI here later]
+- Permanent access link (to be filled): [https://doi.org/your-Zenodo-DOI-here]
