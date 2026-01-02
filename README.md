@@ -6,7 +6,6 @@ It aims to achieve intelligent recognition and decision support for difficult ai
 The core concept introduces a new **“Two-Models-Three-Steps”** deep learning–driven strategy to combine features from multiple ultrasound planes for improved prediction accuracy.
 
 ---
-
 ## 2. Project Structure
 ```
 AirwayDisNetPublic/
@@ -16,9 +15,7 @@ AirwayDisNetPublic/
 ├── train.csv / test.csv# Training and testing log files
 ├── README.md           # Project description (this file)
 ```
-
 ---
-
 ## 3. Environment Requirements
 To install dependencies:
 # 方式1：推荐（用我们刚创建的 requirements.txt 一键安装）
@@ -27,9 +24,7 @@ pip install -r requirements.txt
 # 方式2：手动安装（备用，如需单独安装）
 pip install torch==1.10.2 torchvision==0.11.3 numpy==1.21.6 matplotlib==3.4.3 scikit-learn==1.0.2
 
-
 ## 4. Main Files Description
-
 ### 4.1 plot.py  
 Plots training and validation loss/error curves.  
 **Usage:**
@@ -39,7 +34,6 @@ python plot.py ./experiment_folder/
 **Output:**
 - `loss.png` — Cross-entropy loss curve  
 - `error.png` — Classification error curve  
-
 ---
 
 ### 4.2 ensemble.py  
@@ -53,7 +47,6 @@ Performs model ensemble across different ultrasound plane models.
 **Usage:**
 ```bash
 python ensemble.py ./models/  # 直接运行即可
-
 ---
 
 ## 5. Model Concept
@@ -62,7 +55,6 @@ The project adopts a **multi-plane fusion strategy**, including the following fo
 - **TPH:** Transverse Plane at the Hyoid Bone  
 - **TPT:** Transverse Plane at the Thyroid Cartilage  
 - **PSPL:** Para-Sagittal Plane of the Larynx  
-
 The `ensemble.py` script merges predictions from these models into a unified model to enhance classification and airway visualization performance.
 
 ---
