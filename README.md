@@ -18,10 +18,10 @@ AirwayDisNetPublic/
 ---
 ## 3. Environment Requirements
 To install dependencies:
-#方式1：推荐（用我们刚创建的 requirements.txt 一键安装）
+## 方式1：推荐（用我们刚创建的 requirements.txt 一键安装）
 pip install -r requirements.txt
 
-#方式2：手动安装（备用，如需单独安装）
+## 方式2：手动安装（备用，如需单独安装）
 pip install torch==1.10.2 torchvision==0.11.3 numpy==1.21.6 matplotlib==3.4.3 scikit-learn==1.0.2
 
 ---
