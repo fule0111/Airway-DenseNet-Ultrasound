@@ -54,6 +54,8 @@ Performs model ensemble across different ultrasound plane models.
 ```bash
 python ensemble.py ./models/  # 直接运行即可
 
+---
+
 ## 5. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
 - **MPM:** Mid-Plane of the Mandible (sagittal)  
