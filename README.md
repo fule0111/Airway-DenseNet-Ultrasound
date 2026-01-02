@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 # 方式2：手动安装（备用，如需单独安装）
 pip install torch==1.10.2 torchvision==0.11.3 numpy==1.21.6 matplotlib==3.4.3 scikit-learn==1.0.2
-
+---
 ## 4. Main Files Description
 ### 4.1 plot.py  
 Plots training and validation loss/error curves.  
@@ -55,7 +55,7 @@ These two files are the core log files of the project (consistent with the 5-fol
 - `train.csv`: Records the training process details and validation results of the four sub-models (MPM/TPH/TPT/PSPL), including key indicators such as epoch, loss and accuracy.
 - `test.csv`: Records the final testing results of the four sub-models and the weighted fusion model, which can be used to verify the experimental data in the paper.
 - Format explanation: Both files are in CSV format, which can be directly opened and viewed with Excel, WPS or Notepad (no additional software required).
-
+---
 ## 5. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
 - **MPM:** Mid-Plane of the Mandible (sagittal)  
