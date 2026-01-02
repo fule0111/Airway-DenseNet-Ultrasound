@@ -48,7 +48,7 @@ Performs model ensemble across different ultrasound plane models.
 ```bash
 python ensemble.py ./models/  # 直接运行即可
 ---
-### 5. Model Concept
+## 5. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
 - **MPM:** Mid-Plane of the Mandible (sagittal)  
 - **TPH:** Transverse Plane at the Hyoid Bone  
@@ -57,6 +57,6 @@ The project adopts a **multi-plane fusion strategy**, including the following fo
 The `ensemble.py` script merges predictions from these models into a unified model to enhance classification and airway visualization performance.
 
 ---
-### 6. Citation
+## 6. Citation
 If you use this project in your research, please cite:  
 **"A New Deep Learning-Driven Strategy for Airway Management: The 'Two-Models-Three-Steps' Decision Framework."**
