@@ -44,15 +44,15 @@ python plot.py ./experiment_folder/
 
 ### 4.2 ensemble.py  
 Performs model ensemble across different ultrasound plane models.  
-**Input:** prediction outputs from each sub-model (e.g., MPM, TPH, TPT, PSPL).  
-**Output:** fused results using mean or voting strategy.
-
+**Note:** This script adopts the core fusion strategy used in the paper (consistent with the paper's experimental design).  
+**Input:** 预测输出文件需满足统一格式（每个子模型输出为 `{model_name}_predictions.csv`，包含3列：`sample_id`（样本编号）、`pred_prob`（预测概率）、`true_label`（真实标签））  
+**Supported Fusion Strategy (Core Strategy in the Paper):**  
+采用「5折交叉验证+4个平面准确率比值加权融合」
+- 5折交叉验证：基于5折交叉验证的验证集结果，统计各模型的稳定准确率
+- 加权融合：以4个超声平面模型（MPM/TPH/TPT/PSPL）的验证集准确率为比值，对各模型的预测结果进行加权赋值，最终生成融合结果
 **Usage:**
 ```bash
-python ensemble.py ./models/
-```
-
----
+python ensemble.py ./models/  # 直接运行即可
 
 ## 5. Model Concept
 The project adopts a **multi-plane fusion strategy**, including the following four sub-models:
