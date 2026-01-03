@@ -106,5 +106,4 @@ This project is licensed under the **Apache License 2.0** — see the [LICENSE](
 
 ### 8.2 Permanent Project Access
 To ensure the long-term preservation and accessible of the project (in line with journal requirements), this project will be archived on Zenodo to obtain a persistent Digital Object Identifier (DOI):
-- Persistent DOI (to be filled after archiving): [Please fill in your Zenodo DOI here later]
-- Permanent access link (to be filled): [https://doi.org/your-Zenodo-DOI-here]
+- Persistent DOI (to be filled after archiving): (https://doi.org/10.5281/zenodo.18140439)
