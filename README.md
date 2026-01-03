@@ -17,11 +17,18 @@ AirwayDisNetPublic/
 ```
 ---
 ## 3. Environment Requirements
+Recommended environment:
+- Python ≥ 3.8  
+- PyTorch ≥ 1.10  
+- NumPy, Matplotlib, scikit-learn  
+- Graphviz (optional for network visualization)
+
 To install dependencies:
-## 方式1：推荐（用我们刚创建的 requirements.txt 一键安装）
+### 方式1：推荐（用我们刚创建的 requirements.txt 一键安装，最保险）
+```bash
 pip install -r requirements.txt
 
-## 方式2：手动安装（备用，如需单独安装）
+### 方式2：手动安装（备用，如需单独安装）
 pip install torch==1.10.2 torchvision==0.11.3 numpy==1.21.6 matplotlib==3.4.3 scikit-learn==1.0.2
 
 ---
@@ -65,7 +72,7 @@ The pre-trained weights of the four sub-models (MPM/TPH/TPT/PSPL) are necessary 
 ### 5.2 Access Method
 Due to the protection of research results and file size limitations, the pre-trained weights are not stored in this GitHub repository. 
 **Researchers who need the weights for academic research can apply by contacting the corresponding author:**
-- E-mail: [Fuchunmeng918@163.com]
+- E-mail: Fuchunmeng918@163.com
 - Application Note: Please specify the research purpose and institution in the email subject.
 
 ### 5.3 Usage Note After Obtaining Weights
