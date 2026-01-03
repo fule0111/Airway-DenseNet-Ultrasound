@@ -27,6 +27,7 @@ To install dependencies:
 ### 方式1：推荐（用我们刚创建的 requirements.txt 一键安装）
 ```bash
 pip install -r requirements.txt
+```
 
 ### 方式2：手动安装（备用，如需单独安装）
 ```bash
